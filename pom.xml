@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>oo</groupId>
+        <artifactId>atom-starter</artifactId>
+        <version>0.0.11</version>
+    </parent>
+
+    <groupId>com.github.skapral.reqresp</groupId>
+    <artifactId>reqresp</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>reqresp-core</module>
+        <module>reqresp-se</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.skapral.reqresp</groupId>
+                <artifactId>reqresp-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.skapral.reqresp</groupId>
+                <artifactId>reqresp-se</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-releases</id>
+            <url>http://dl.bintray.com/skapral/oo-maven</url>
+        </repository>
+    </repositories>
+</project>
