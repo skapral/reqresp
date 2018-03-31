@@ -13,6 +13,27 @@
     <artifactId>reqresp</artifactId>
     <version>0.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>ReqResp</name>
+    <description>Small, easy, object-oriented abstraction tier over HTTP</description>
+    <url>https://github.com/project-avral/reqresp</url>
+    <scm>
+        <url>https://github.com/project-avral/reqresp.git</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Kapralov Sergey</name>
+            <email>skapralov@mail.ru</email>
+            <timezone>UTC+03:00</timezone>
+        </developer>
+    </developers>
 
     <modules>
         <module>reqresp-core</module>
